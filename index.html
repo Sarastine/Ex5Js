@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/Ex5Js.css">
+		<title>Javascript Exercice 5</title>
+	</head>
+	<body>
+		<!--Demander à l’utilisateur deux nombres à virgule. Ne garder que la partie entière du premier .
+Les multiplier et afficher le résultat dans une boîte de dialogue.-->
+		<div class="container-fluid">
+			<h1>Javascript</h1>
+			<h2>Exercice 5</h2>
+			<form class="col-12">
+				<div class="row">
+					<label>Premier nombre décimal :</label><input type="text" name="numberOne" id="numberOne" placeholder="Nombre décimal">
+				</div>
+				<div class="row">
+					<label>Second nombre décimal :</label><input type="text" name="numberTwo" id="numberTwo" placeholder="Nombre décimal">
+				</div>
+				<button type="submit" name="Valider" id="Valider" class="Button" onclick="Multiplication()">Valider</button>
+			</form>
+		</div>
+		<script type="text/javascript">
+			function Multiplication() {
+				var numberOne = document.getElementById('numberOne').value;
+				var numberTwo = document.getElementById('numberTwo').value;
+				var result = Math.trunc(numberOne)*numberTwo;
+				if (isNaN(result) == true) {
+					alert("Rentrez des nombres avec un point, pas une virgule");
+				} else {
+					alert(result);
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+	background-color: #333;
+}
+h1, h2 {
+	color: #080;
+	text-align: center;
+}
+form {
+	color: #0B0;
+}
+.Button{
+	background-color: #BBB;
+	color: #080;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.Button:hover{
+	background-color: #080;
+	color: #BBB !important;
+}
